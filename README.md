@@ -11,7 +11,7 @@ Include the latest jQuery and `assets/js/jquery.threesixty.js` in your HTML page
 #### html
 
 ```html
-<div class="threesixty" data-path="assets/img/src/gem{index}.jpg" data-count="61">
+<div class="threesixty" data-path="assets/img/src/gem{index}.jpg" data-count="61"></div>
 ```
 
 The data-path attribute `assets/img/src/gem{index}.jpg` is the path to the image sequence.  The index being used to grab the images is 0-based and 1-digit.  The data-count attribute is the number of images.
