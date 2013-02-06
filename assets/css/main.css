@@ -259,7 +259,7 @@
   display: block;
 }
 
-/* line 8, ../../scss/main.scss */
+/* line 9, ../../scss/main.scss */
 body {
   font-size: 12px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -267,36 +267,40 @@ body {
   background-color: #FCFCFC;
   text-align: center;
   margin: 50px 0 0 0;
+  width: 960px;
+  margin: 50px auto;
 }
-/* line 11, ../../scss/main.scss */
+/* line 12, ../../scss/main.scss */
 body table {
   font-size: 12px;
 }
-/* line 18, ../../scss/main.scss */
+/* line 21, ../../scss/main.scss */
 body h1 {
   color: #7DF0C9;
   font-size: 7.0em;
   margin: 0;
 }
-/* line 24, ../../scss/main.scss */
+/* line 27, ../../scss/main.scss */
 body h2 {
   color: #77E4BF;
   font-size: 1.2em;
 }
-/* line 29, ../../scss/main.scss */
+/* line 32, ../../scss/main.scss */
 body h3 {
   color: #6CCFAD;
   font-size: 1.2em;
 }
-/* line 34, ../../scss/main.scss */
+/* line 37, ../../scss/main.scss */
 body .threesixty-wrapper {
   margin: 30px auto;
   width: 960px;
   position: relative;
 }
-/* line 38, ../../scss/main.scss */
+/* line 41, ../../scss/main.scss */
 body .threesixty-wrapper .threesixty {
   display: block;
+  width: 960px;
+  height: 540px;
 }
 /* line 26, ../../scss/_ui-spinner.scss */
 body .threesixty-wrapper .threesixty .ui-spinner {
@@ -326,21 +330,38 @@ body .threesixty-wrapper .threesixty .ui-spinner:after {
   left: 10px;
   display: block;
 }
-/* line 42, ../../scss/main.scss */
+/* line 47, ../../scss/main.scss */
 body .threesixty-wrapper .threesixty .ui-spinner {
-  margin: 0 auto;
+  margin: 270px auto;
 }
-/* line 57, ../../scss/main.scss */
+/* line 52, ../../scss/main.scss */
 body .threesixty-wrapper .label {
   margin: 20px auto;
   display: block;
 }
+/* line 58, ../../scss/main.scss */
+body .download-btn {
+  margin: 15px 0 15px 0;
+}
+/* line 60, ../../scss/main.scss */
+body .download-btn h1 {
+  cursor: pointer;
+  padding: 15px 20px 15px 20px;
+  display: inline-block;
+  background: #C0CFCF;
+  color: #FCFCFC;
+  font-size: 3.0em;
+}
 /* line 67, ../../scss/main.scss */
+body .download-btn h1:hover {
+  background: #94A2A2;
+}
+/* line 74, ../../scss/main.scss */
 body .examples {
   display: inline-block;
   margin: 20px 0 0 0;
 }
-/* line 78, ../../scss/main.scss */
+/* line 85, ../../scss/main.scss */
 body .social {
-  margin: 25px 0 24px 0;
+  margin: 35px 0 35px 0;
 }

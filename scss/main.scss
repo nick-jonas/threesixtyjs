@@ -2,6 +2,7 @@
 @import "ui-spinner";
 
 $img-width: 960px;
+$img-height: 540px;
 
 @include ui-spinner;
 
@@ -14,6 +15,8 @@ body{
     background-color:#FCFCFC;
     text-align:center;
     margin:50px 0 0 0;
+    width:$img-width;
+    margin:50px auto;
 
     h1{
         color:#7DF0C9;
@@ -37,31 +40,35 @@ body{
         position:relative;
         .threesixty{
             display:block;
+            width:$img-width;
+            height:$img-height;
             $preload-size: 50px;
             @include ui-spinner(transparent, $preload-size, #C2FCCC, #55FC5A);
             .ui-spinner{
-                // position:absolute;
-                // top:50%;
-                // left:50%;
-                margin:0 auto;
-            }
-            img{
-                // position:absolute;
-                // top:50%;
-                // left:50%;
-                // margin-left:-130px;
-                // margin-top:-160px;
+                margin:$img-height / 2 auto;
             }
         }
 
         .label{
             margin:20px auto;
             display:block;
-            // position:absolute;
-            // top:50%;
-            // left:50%;
-            // margin:155px 0 0 -48px;
         }
+    }
+
+    .download-btn{
+        margin:15px 0 15px 0;
+        h1{
+            cursor:pointer;
+            padding:15px 20px 15px 20px;
+            display:inline-block;
+            background:#C0CFCF;
+            color:#FCFCFC;
+            font-size:3.0em;
+            &:hover{
+                background:#94A2A2;
+            }
+        }
+
     }
 
     .examples{
@@ -76,7 +83,7 @@ body{
     }
 
     .social{
-        margin:25px 0 24px 0;
+        margin:35px 0 35px 0;
     }
 }
 

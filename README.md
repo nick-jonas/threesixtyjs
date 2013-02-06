@@ -1,4 +1,4 @@
-# ThreeSixty
+# threesixty
 
 ---
 
