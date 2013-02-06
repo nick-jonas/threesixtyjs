@@ -31,3 +31,7 @@ The options for dragDirection are `horizontal` and `vertical`, horizontal being 
 
 * [Example Site](http://nick-jonas.github.com/threesixtyjs)
 
+
+## Credits
+
+Thanks to [Will Adams](https://github.com/willistherage) for the example 3D image sequence.
