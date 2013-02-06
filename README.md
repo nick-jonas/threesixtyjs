@@ -6,11 +6,15 @@
 
 ## Usage
 
+#### html
+
 ```html
 <div class="threesixty" data-path="assets/img/src/gem{index}.jpg" data-count="61">
 ```
 
 The data-path attribute `assets/img/src/gem{index}.jpg` is the path to the image sequence.  The index being used to grab the images is 0-based and 1-digit.  The data-count attribute is the number of images.
+
+#### js
 
 ```javascript
 $(document).ready(function(){
@@ -25,5 +29,5 @@ The options for dragDirection are `horizontal` and `vertical`, horizontal being 
 
 ## In the Wild
 
-[Example Site](http://nick-jonas.github.com/threesixtyjs)
+* [Example Site](http://nick-jonas.github.com/threesixtyjs)
 
