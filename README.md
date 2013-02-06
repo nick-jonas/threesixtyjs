@@ -34,4 +34,5 @@ The options for dragDirection are `horizontal` and `vertical`, horizontal being 
 
 ## Credits
 
-Thanks to [Will Adams](https://github.com/willistherage) for the example 3D image sequence.
+* [Will Adams](https://github.com/willistherage) for the example 3D image sequence.
+* [Tom Genoni](https://github.com/tomgenoni) for the [preloader](https://github.com/tomgenoni/ouroboros).
