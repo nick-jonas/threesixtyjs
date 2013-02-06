@@ -6,8 +6,6 @@
 
 ## Usage
 
----
-
 ```html
 <div class="threesixty" data-path="assets/img/src/gem{index}.jpg" data-count="61">
 ```
@@ -23,3 +21,9 @@ $(document).ready(function(){
 ```
 
 The options for dragDirection are `horizontal` and `vertical`, horizontal being the default.
+
+
+## In the Wild
+
+[Example Site](http://nick-jonas.github.com/threesixtyjs)
+
