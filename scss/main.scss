@@ -1,0 +1,82 @@
+@import "compass/css3/transition";
+@import "ui-spinner";
+
+$img-width: 960px;
+
+@include ui-spinner;
+
+body{
+
+    font-size:12px;
+    table{ font-size:12px; }
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    background-color:#FCFCFC;
+    text-align:center;
+    margin:50px 0 0 0;
+
+    h1{
+        color:#7DF0C9;
+        font-size:7.0em;
+        margin:0;
+    }
+
+    h2{
+        color:#77E4BF;
+        font-size:1.2em;
+    }
+
+    h3{
+        color:#6CCFAD;
+        font-size:1.2em;
+    }
+
+    .threesixty-wrapper{
+        margin:30px auto;
+        width: $img-width;
+        position:relative;
+        .threesixty{
+            display:block;
+            $preload-size: 50px;
+            @include ui-spinner(transparent, $preload-size, #C2FCCC, #55FC5A);
+            .ui-spinner{
+                // position:absolute;
+                // top:50%;
+                // left:50%;
+                margin:0 auto;
+            }
+            img{
+                // position:absolute;
+                // top:50%;
+                // left:50%;
+                // margin-left:-130px;
+                // margin-top:-160px;
+            }
+        }
+
+        .label{
+            margin:20px auto;
+            display:block;
+            // position:absolute;
+            // top:50%;
+            // left:50%;
+            // margin:155px 0 0 -48px;
+        }
+    }
+
+    .examples{
+        display:inline-block;
+        margin:20px 0 0 0;
+        .html{
+            // width:300px;
+        }
+        .js{
+            // width:300px;
+        }
+    }
+
+    .social{
+        margin:25px 0 24px 0;
+    }
+}
+
