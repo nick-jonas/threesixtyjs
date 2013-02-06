@@ -6,7 +6,7 @@
 
 ## Usage
 
-Include the latest jQuery and `assets/js/threesixty.jquery.js` in your HTML page.
+Include the latest jQuery and `assets/js/jquery.threesixty.js` in your HTML page.
 
 #### html
 
