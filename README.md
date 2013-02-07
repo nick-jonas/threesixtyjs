@@ -32,6 +32,7 @@ The options for dragDirection are `horizontal` and `vertical`, horizontal being 
 
 * Add mouse-wheel functionality as an option (default:off)
 * Expose nextFrame() & prevFrame() methods, allowing users to connect UI controls
+* build flick/toss physics
 
 
 ## In the Wild
