@@ -28,6 +28,10 @@ $(document).ready(function(){
 
 The options for dragDirection are `horizontal` and `vertical`, horizontal being the default.
 
+## To Do
+
+* Add mouse-wheel functionality as an option (default:off)
+
 
 ## In the Wild
 
