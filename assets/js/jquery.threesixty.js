@@ -34,7 +34,7 @@ var scope,
         this._name = pluginName;
 
         // make sure string input for drag direction is valid
-        if(dragDirections.indexOf(options.dragDirection) < 0){
+        if($.inArray(options.dragDirection, dragDirections) >= 0){
             options.dragDirection = defaults.dragDirection;
         }
 
