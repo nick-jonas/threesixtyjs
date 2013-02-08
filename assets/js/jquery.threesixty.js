@@ -132,7 +132,7 @@ var scope,
         $el.each(function(i){
             var $this =$(this);
             // mouse down
-            $this.bind('mousedown', function(e){
+            $this.mousedown(function(e){
                 e.preventDefault();
                 thisTotal = $(this).data('count');
                 $downElem = $(this);
@@ -143,10 +143,9 @@ var scope,
             });
 
             // mouse up
-            $(document, 'html', 'body').bind('mouseup', that.onMouseUp);
-            $(document).on('blur', that.onMouseUp);
-
-            $('body').bind('mousemove', function(e){
+            $(document, 'html', 'body').mouseup(that.onMouseUp);
+            $(document).blur(that.onMouseUp);
+            $('body').mousemove(function(e){
                 if(isMouseDown){
                     var x = e.screenX,
                         y = e.screenY,
