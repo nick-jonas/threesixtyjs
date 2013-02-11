@@ -71,6 +71,8 @@ var scope,
             total += count;
         });
 
+        _disableTextSelectAndDragIE8();
+
         this.initLoad();
     };
 
@@ -184,6 +186,21 @@ var scope,
 
     ThreeSixty.prototype.onMouseUp = function(e) {
         isMouseDown = false;
+    };
+
+    /**
+     * Disables text selection and dragging on IE8 and below.
+     */
+    var _disableTextSelectAndDragIE8 = function() {
+      // Disable text selection.
+      document.body.onselectstart = function() {
+          return false;
+      };
+
+      // Disable dragging.
+      document.body.ondragstart = function() {
+          return false;
+      };
     };
 
 
