@@ -51,7 +51,6 @@ Step to the previous frame.
 * ~~Add arrow key functionality as an option (default:off)~~
 * ~~Expose nextFrame() & prevFrame() methods, allowing users to connect UI controls~~
 * build flick/toss physics (can this be done smoothly?)
-* add touch/swipe support
 * ~~add touch/swipe support~~
 
 ## In the Wild
