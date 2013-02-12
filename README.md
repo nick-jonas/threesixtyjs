@@ -47,7 +47,7 @@ Step to the previous frame.
 
 ## To Do
 
-* Add mouse-wheel functionality as an option (default:off)
+* ~~Add mouse-wheel functionality as an option (default:off)~~ (not doing this, users should control this outside of plugin using nextFrame/prevFrame)
 * ~~Add arrow key functionality as an option (default:off)~~
 * ~~Expose nextFrame() & prevFrame() methods, allowing users to connect UI controls~~
 * build flick/toss physics (can this be done smoothly?)
