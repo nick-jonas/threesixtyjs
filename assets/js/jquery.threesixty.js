@@ -48,6 +48,48 @@ var scope,
         $el.html('');
     };
 
+    $.fn.nextFrame = ThreeSixty.prototype.nextFrame = function(){
+        $(this).each(function(i){
+            var $this = $(this),
+                val = $this.data('lastVal') || 0,
+                thisTotal = $this.data('count');
+
+            val = val + 1;
+
+            $this.data('lastVal', val);
+
+            if(val >= thisTotal) val = val % (thisTotal - 1);
+            else if(val <= -thisTotal) val = val % (thisTotal - 1);
+            if(val > 0) val = thisTotal - val;
+
+            val = Math.abs(val);
+
+            $this.find('.threesixty-frame').css({display: 'none'});
+            $this.find('.threesixty-frame:eq(' + val + ')').css({display: 'block'});
+        });
+    };
+
+    $.fn.prevFrame = ThreeSixty.prototype.prevFrame = function(){
+        $(this).each(function(i){
+            var $this = $(this),
+                val = $this.data('lastVal') || 0,
+                thisTotal = $this.data('count');
+
+            val = val - 1;
+
+            $this.data('lastVal', val);
+
+            if(val >= thisTotal) val = val % (thisTotal - 1);
+            else if(val <= -thisTotal) val = val % (thisTotal - 1);
+            if(val > 0) val = thisTotal - val;
+
+            val = Math.abs(val);
+
+            $this.find('.threesixty-frame').css({display: 'none'});
+            $this.find('.threesixty-frame:eq(' + val + ')').css({display: 'block'});
+        });
+    };
+
 
 
     // PRIVATE METHODS -------------------------------------------------
@@ -140,6 +182,7 @@ var scope,
                 $downElem = $(this);
                 startY = e.screenY;
                 lastVal = $downElem.data('lastVal') || 0;
+                lastX = $downElem.data('lastX') || 0;
                 lastY = $downElem.data('lastY') || 0;
                 isMouseDown = true;
             });
@@ -170,13 +213,19 @@ var scope,
                     lastVal = val;
                     lastY = y;
                     lastX = x;
+
                     $downElem.data('lastY', lastY);
                     $downElem.data('lastX', lastX);
                     $downElem.data('lastVal', lastVal);
+
                     if(val >= thisTotal) val = val % (thisTotal - 1);
                     else if(val <= -thisTotal) val = val % (thisTotal - 1);
                     if(val > 0) val = thisTotal - val;
+
                     val = Math.abs(val);
+
+                    console.log(val, lastVal);
+
                     $downElem.find('.threesixty-frame').css({display: 'none'});
                     $downElem.find('.threesixty-frame:eq(' + val + ')').css({display: 'block'});
                 }
