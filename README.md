@@ -46,6 +46,14 @@ $('.threesixty').prevFrame();
 
 Step to the previous frame.
 
+#### events
+
+```javascript```
+$('.threesixty').on('down', function(){ // when user starts to drag });
+$('.threesixty').on('move', function(){ // as user is dragging });
+$('.threesixty').on('up', function(){ // when user finishes dragging});
+```
+
 ## To Do
 
 * ~~Add mouse-wheel functionality as an option (default:off)~~ (not doing this, users should control this outside of plugin using nextFrame/prevFrame)
