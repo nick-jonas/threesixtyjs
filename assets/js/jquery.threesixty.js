@@ -203,6 +203,7 @@ var scope,
             lastX = $downElem.data('lastX') || 0;
             lastY = $downElem.data('lastY') || 0;
             isMouseDown = true;
+            $downElem.trigger('down');
         });
 
         // arrow keys
@@ -229,6 +230,7 @@ var scope,
         lastX = $downElem.data('lastX') || 0;
         lastY = $downElem.data('lastY') || 0;
         isMouseDown = true;
+        $downElem.trigger('down');
     };
 
     ThreeSixty.prototype.onTouchMove = function(e) {
@@ -246,6 +248,8 @@ var scope,
             var x = screenX,
                 y = screenY,
                 val = 0;
+
+            $downElem.trigger('move');
 
             if(options.dragDirection === 'vertical'){
                 if(y > lastY){
@@ -295,6 +299,7 @@ var scope,
 
     ThreeSixty.prototype.onMouseUp = function(e) {
         isMouseDown = false;
+        $downElem.trigger('up');
     };
 
     /**
