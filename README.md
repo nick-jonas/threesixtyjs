@@ -31,6 +31,7 @@ $(document).ready(function(){
 * `dragDirection` : `horizontal` || `vertical`, `horizontal` is default.
 * `useKeys` : `true` || `false`, `false` is default
 * `draggable` : `true` || `false`, `true` is default
+* `buffer` : `move space ignore`, `0` is default
 
 #### api
 

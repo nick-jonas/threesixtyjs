@@ -14,7 +14,8 @@ var scope,
     defaults = {
         dragDirection: 'horizontal',
         useKeys: false,
-        draggable: true
+        draggable: true,
+        buffer: 0
     },
     dragDirections = ['horizontal', 'vertical'],
     options = {},
@@ -251,19 +252,21 @@ var scope,
 
             $downElem.trigger('move');
 
-            if(options.dragDirection === 'vertical'){
-                if(y > lastY){
+            if (options.dragDirection === 'vertical') {
+                if(y > lastY && y - lastY > options.buffer){
                     val = lastVal + 1;
-                }else{
+                }else if(y < lastY && lastY - y > options.buffer){
                     val = lastVal - 1;
-                }
-            }else{
-                if(x > lastX){
-                    val = lastVal + 1;
-                }else if(x === lastX){
+                }else {
                     return;
-                }else{
+                }
+            } else {
+                if(x > lastX && x - lastX > options.buffer){
+                    val = lastVal + 1;
+                }else if(x < lastX && lastX - x > options.buffer){
                     val = lastVal - 1;
+                }else {
+                    return;
                 }
             }
 
