@@ -2,8 +2,8 @@
  * ThreeSixty: A jQuery plugin for generating a draggable 360 preview from an image sequence.
  * Version: 0.1.2
  * Original author: @nick-jonas
- * Website: http://www.workofjonas.com
- * Licensed under the MIT license
+ * Website: http://www.nickjonas.nyc
+ * Licensed under the Apache License Version 2.0
  */
 
 ;(function ( $, window, document, undefined ) {
