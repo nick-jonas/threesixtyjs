@@ -299,7 +299,9 @@ var scope,
 
     ThreeSixty.prototype.onMouseUp = function(e) {
         isMouseDown = false;
-        $downElem.trigger('up');
+        if (typeof $downElem !== 'object') {
+            $downElem.trigger('up');
+        }
     };
 
     /**
